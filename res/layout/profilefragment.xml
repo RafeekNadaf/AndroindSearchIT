@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout 
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/background_material_light" >
+        	  <EditText 
+    	    android:id="@+id/editUsername"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	      	android:background="@drawable/edittext_top_bg"
+	      	android:layout_marginTop="15dp"
+	        android:padding="10dp"
+	        android:hint="@string/user"
+	        android:inputType="text"
+	        android:textColorHint="#bbbbbb" />
+	  
+	  
+	  <EditText 
+            android:id="@+id/edit_emailId"
+            android:layout_marginTop="20dp"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	      	android:background="@drawable/edittext_top_bg"
+	      	android:padding="10dp"
+	      	android:inputType="textEmailAddress"
+	        android:hint="@string/email"
+	        android:textColorHint="#bbbbbb" />
+	  
+	  <EditText 
+            android:id="@+id/eidt_phoneNumber"
+            android:layout_marginTop="25dp"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	      	android:background="@drawable/edittext_top_bg"
+	      	android:inputType="phone"
+	      	android:padding="10dp"
+	        android:hint="@string/phone"
+	        android:textColorHint="#bbbbbb" />
+	  
+	  <EditText 
+            android:id="@+id/eidt_phoneNumber"
+            android:layout_marginTop="25dp"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	      	android:background="@drawable/edittext_top_bg"
+	      	android:inputType="phone"
+	      	android:padding="10dp"
+	        android:hint="@string/phone"
+	        android:textColorHint="#bbbbbb" />>
+        
+    </LinearLayout>
+    
+    <Button
+         android:id="@+id/eidt_profile_btn"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/layout"
+         android:layout_centerHorizontal="true"
+         android:layout_margin="4dp"
+         android:layout_marginTop="34dp"
+         android:padding="10dp"
+         android:text="@string/update" />
+    
+    
+</RelativeLayout>

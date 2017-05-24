@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout 
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/background_material_light"
+		android:gravity="center">
+        
+        <EditText 
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:inputType="number"
+            android:background="@drawable/edittext_top_bg"
+            android:hint="@string/picode" />
+        
+        <EditText 
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_top_bg"
+            android:hint="@string/addres" />
+        
+        <Spinner 
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_default_bg"
+            android:layout_marginTop="15dp" />
+        
+         <Spinner 
+            android:id="@+id/distic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_default_bg"
+            android:layout_marginTop="18dp" />
+         
+         <Spinner 
+            android:id="@+id/services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_default_bg"
+            android:layout_marginTop="22dp"  />
+         
+        </LinearLayout>
+        
+    	<LinearLayout 
+    	    android:id="@+id/linear1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_alignParentLeft="true"
+	        android:orientation="horizontal"
+	        android:layout_below="@+id/linear"
+	        android:padding="10dp"
+	        android:background="@color/background_material_light"
+			android:gravity="center" >
+         
+    	   <Button 
+    	       android:id="@+id/cancel_btn"
+    	       android:layout_width="100dp"
+    	       android:layout_height="wrap_content" 
+    	       android:padding="5dp"
+    	       android:layout_gravity="left"
+    	       android:text="Cancel"  />
+
+    	   <Button
+    	       android:id="@+id/ok_btn"
+    	       android:layout_width="100dp"
+    	       android:layout_height="wrap_content"
+    	       android:padding="5dp"
+    	       android:layout_gravity="right"
+    	       android:text="Ok" />
+    	    
+    	</LinearLayout>
+
+   
+
+</RelativeLayout>

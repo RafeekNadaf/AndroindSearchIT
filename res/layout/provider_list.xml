@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+         <TextView
+            android:id="@+id/provider_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Provider Name"
+            android:textColor="#000000"
+            android:padding="10px"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp" />
+         
+        <TextView 
+         	android:id="@+id/provider_email"
+         	android:layout_width="match_parent"
+         	android:layout_height="wrap_content"
+         	android:layout_below="@+id/provider_adress"
+         	android:text="Provider Email"
+         	android:layout_marginLeft="10dp"
+         	android:textColor="#000000"
+         	android:padding="10px"
+         	android:textSize="15dp" />
+     
+	    <TextView 
+	         android:id="@+id/provider_number"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/provider_email"
+	         android:text="Provider Number"
+	         android:textColor="#000000"
+	         android:padding="10px"
+	         android:layout_marginLeft="10dp"
+	         android:textSize="15dp" />
+	    
+	    <TextView
+            android:id="@+id/provider_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/provider_number"
+            android:text="Provider adress"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:padding="10px"
+            android:textSize="15dp" />
+	    
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:padding="10px"
+        android:orientation="horizontal" >
+        
+        <ImageButton
+          android:id="@+id/provider_emailbtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:padding="10px"
+          android:src="@drawable/ic_action_mail" />
+        
+        <ImageButton
+	        android:id="@+id/provider_call"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="10px"
+	        android:src="@drawable/ic_action_call" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5px"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lin2" >
+        
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:stepSize="2.0" />
+        
+    </LinearLayout>
+    <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@+id/lin3"
+	    android:layout_marginTop="20dp"
+	    android:background="#000000" />
+
+</RelativeLayout>

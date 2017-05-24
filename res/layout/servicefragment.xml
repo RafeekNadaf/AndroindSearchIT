@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/background_material_light"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/eidt_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_top_bg"
+            android:hint="@string/picode"
+            android:inputType="number"
+            android:padding="8dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/eidt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_top_bg"
+            android:hint="@string/addres"
+            android:padding="8dp" />
+
+        <Spinner
+            android:id="@+id/eidt_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_default_bg" />
+
+        <Spinner
+            android:id="@+id/eidt_distic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edittext_default_bg" />
+
+        <Spinner
+            android:id="@+id/eidt_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edittext_default_bg" />
+        
+    </LinearLayout>
+    
+    <Button
+         android:id="@+id/eidt_Service_btn"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/linear"
+         android:layout_centerHorizontal="true"
+         android:layout_margin="4dp"
+         android:layout_marginTop="34dp"
+         android:padding="10dp"
+         android:text="@string/update" />
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidSearchIt</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="email">Enter Email</string>
+    <string name="user">Enter User Name</string>
+    <string name="phone">Enter Phone Number</string>
+    <string name="password">Enter Password</string>
+    <string name="service">Are you Service Provider</string>
+    <string name="sign_up">Sign Up</string>
+    
+    
+    <!-- Resources for Providers -->
+    
+    <string name="picode">Enter Pincode</string>
+    <string name="addres">Enter address</string>
+    
+    <string name="state">select state</string>
+    
+    <string-array name="items">
+        <item>Profile</item>
+        <item>Services</item>
+        <item>Setting</item>
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+     <string name="update">Updte</string>
+     <string name="login">Login</string>
+     
+
+</resources>
